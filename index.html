@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+  
+
+   <BODY onload="noBack();"
+    onpageshow="if (event.persisted) noBack();" onunload=""> 
+<html>
+    <head>
+        <title>BUIE Attendance Portal</title>
+        <link rel="stylesheet" type="text/css" href="style_1.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="d1">
+        <img src="../picture/buie1.png" alt="logo1" style="height: 90px; width: 52%;">
+        <img src="../picture/logo1.png" alt="logo1" style="height: 90px; width: 45%;">
+        </div>
+        <table>
+        <tr style=border:1px solid green;border-radius: 2px;">
+            <th id="th1" width="16.66%"><a href="../index.jsp">Home</a></th>
+     <!--       <th id="th1" width="16.66%"><a href="../Attendance_Report/Principal_registrar.html">Attendance Report</a></th>-->
+            <th id="th1" width="16.66%"><a href="../Attendance_Report/Faculty.html">Principal Desk</a></th>
+    <!--        <th id="th1" width="16.66%"><a href="../Attendance_Report/Principal_registrar1.html">Massage Attendance Report</a></th>-->
+            <th id="th1" width="16.66%"><a href="../Admin/Main_Admin/Admin_Registrar.html">Admin</a></th>
+            <th id="th1" width="16.66%"><a href="../Exam_Cell/Exam_Cell.jsp">Exam Cell</a></th>
+            <th id="th1" width="16.66%"><a href="../NAAC/Admin_Registrar.html">NAAC</a></th>
+            
+         <!--   <th id="th1" width="16.66%"><a href="../Attendance/Department_Select_Attendance.jsp">Attendance Report</a></th>-->
+        </tr>
+        </table>
+        
+        <table id="s1">
+            <tr>
+                <td id="th2">
+        <form action="../Student_Part/Student_Data.jsp" method="post">
+            
+            <h4>Student can view attendance report from here </h4>
+            <label for="uname"><b>Department:</b></label><br>
+           <select name="Department">
+  <option value="CSE">B.TECH_CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">B.TECH_ECE</option>
+    <option value="AEIE">AEIE</option>
+    <option value="EE">EE</option>
+    <option value="CE">CE</option>
+    <option value="ME">ME</option>
+    <option value="M.TECH_CSE">M.TECH_CSE</option>
+    <option value="M.TECH_ECE">M.TECH_ECE</option>
+</select></b></label>
+            <br>
+            <label for="passwd"><b>Semester            :      </b><br>
+            <select name="Semester">
+    <option value="1">1st </option>
+    <option value="2">2nd</option>
+    <option value="3">3rd</option>
+    <option value="4">4th </option>
+    <option value="5">5th</option>
+    <option value="6">6th</option>
+    <option value="7">7th </option>
+    <option value="8">8th</option>
+   
+</select></label>
+            <br>
+            <label for="number"><b>Class Roll     :  </b><br>
+            <input type="number" placeholder="Enter Your Class Roll" name="Class_Roll" required></label>
+            <input type="submit" value="submit" id="submit">
+           
+        </form>
+                    <img src="../picture/student.png" alt="student" id="student">
+               
+                </td>
+            <td rowspan="3">
+                
+               <div>
+<div class="w3-content w3-section" >
+  <img class="mySlides" src="../picture/buie12.jpeg" style="width:1000px; height: 350px;">
+  <img class="mySlides" src="../picture/buie7.jpeg" style="width:1000px; height: 350px;">
+  <img class="mySlides" src="../picture/buie8.jpeg" style="width:1000px; height: 350px;">
+  <img class="mySlides" src="../picture/buie9.jpeg" style="width:1000px; height: 350px;">
+  <img class="mySlides" src="../picture/buie10.jpeg" style="width:1000px; height: 350px;">
+  <img class="mySlides" src="../picture/buie11.jpeg" style="width:1000px; height: 350px;">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+</div>  
+
+                <img src="../picture/mm.jpg" alt="mm" height="160" width="900">
+            
+            </td>
+            </tr>
+            
+           
+                <tr>
+                
+                    <td id="th2">
+           <form action="Registered_User.jsp" method="post">
+            
+            <h4>Faculty Login</h4>
+            <label for="Email"><b>Login Name:</b></label><br>
+            <input type="text" placeholder="Enter Your College Mail ID" id="name" name="Email" required "><br>
+            <label for="passwd"><b>Password:</b></label><br>
+            <input type="password" placeholder="Enter Your Password" name="password" id="password" required >
+            <input type="submit" value="submit" id="submit">
+           
+           </form>
+                        <br><img src="../picture/teacher.png" alt="teacher" id="student" style="align:left;">
+              
+                        
+           
+	<!--	<footer id="footer"><a href="registration_form1.jsp">If you're a new user, Register Here</a></footer>
+                
+<label >Forgot Password</b></label><br>
+<label>Enter Email ID:</b></label>
+<form action="forgot_process.jsp" method="post">
+<input type="text" name="email" />
+<input type="submit" > 
+
+<button id="myBtn" style="margin-left:195px; background-color:#4A7392; font-weight: bold;border: none; color: red; cursor: pointer; "></button>
+
+<!-- The Modal -->
+      
+             
+                        
+                    </td>
+                </tr>
+        </table>
+    </body>
+</html>
